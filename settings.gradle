@@ -1,0 +1,2 @@
+rootProject.name='OCR_Huar'
+include ':app'
