@@ -11,7 +11,13 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="开始扫描" />
+        android:text="身份证" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="驾驶证" />
 
     <TextView
         android:id="@+id/mSuccessText1"
@@ -21,6 +27,7 @@
         android:background="#ffffff"
         android:textColor="#333333"
         android:textSize="16sp"
+        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -32,24 +39,44 @@
         android:layout_marginTop="2dp"
         android:background="#ffffff"
         android:textColor="#333333"
+        android:padding="5dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mScanCarCard" />
 
-    <ImageView
-        android:layout_margin="15dp"
-        android:layout_gravity="center"
-        android:id="@+id/im_avatar"
-        android:layout_width="120dp"
-        android:layout_height="150dp" />
-
-    <ImageView
-        android:layout_margin="15dp"
-        android:id="@+id/im_full"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="250dp" />
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/im_avatar"
+            android:layout_width="60dp"
+            android:layout_height="80dp" />
+
+        <ImageView
+            android:layout_margin="15dp"
+            android:id="@+id/im_full"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mSuccessText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="5dp"
+        android:background="#ffffff"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mScanCarCard" />
 
 
 </LinearLayout>
